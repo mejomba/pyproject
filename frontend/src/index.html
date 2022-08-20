@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body>
+    <nav class="bg-gray-100 text-white grid grid-cols-3 content-center h-12 w-screen">
+        <!-- section right -->
+        <div class="bg-blue-200 md:block hidden">
+            <ul class="flex justify-start items-center h-12">
+                <li class="p-2">
+                    <a href="#">
+                        <span>
+                            <img src="image.png" alt="پروفایل" class="w-8 inline">
+                            پروفایل
+                        </span>
+                    </a>
+                </li>
+                <!-- ورود یا ثبت نام -->
+                <li class="p-2">
+                    <a href="#" class="border p-2 rounded hover:text-gray-100">ورود یا ثبت نام</a>
+                </li>
+                <li class="p-2">
+                    <a href="#">
+                        <img src="image.png" alt="زنگوله" class="w-8">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+        <!-- section center -->
+        <div class="bg-red-200 h-12 md:block hidden">
+            <ul class="flex justify-center items-center h-12">
+                <li><a href="#" class="p-2 hover:text-gray-100">آینم اول</a></li>
+                <li><a href="#" class="p-2 hover:text-gray-100">آینم دوم</a></li>
+                <li><a href="#" class="p-2 hover:text-gray-100">آینم سوم</a></li>
+                <li><a href="#" class="p-2 hover:text-gray-100">آیتم چهارم</a></li>
+            </ul>
+        </div>
+    
+        <!-- section left -->
+        <div class="bg-green-200 justify-end items-center h-12 md:flex hidden">
+            <a href="#"><img class="w-16" src="image.png" alt="لوگو"></a>
+        </div>
+    
+        <!-- humberger menue -->
+        <div class="flex justify-start ">
+            <ul id="humberger" class="md:hidden block">
+                <li>
+                    <img src="https://icon-library.com/images/menu-icon-svg/menu-icon-svg-9.jpg" alt="" class="w-12">
+                </li>
+            </ul>
+            <ul class="bg-red-400 hidden" id="drop-down">
+                <li><a href="#" class="p-2 hover:text-gray-100">آینم اول</a></li>
+                <li><a href="#" class="p-2 hover:text-gray-100">آینم دوم</a></li>
+                <li><a href="#" class="p-2 hover:text-gray-100">آینم سوم</a></li>
+                <li><a href="#" class="p-2 hover:text-gray-100">آیتم چهارم</a></li>
+            </ul>
+        </div>
+    
+    
+    </nav>
+    
+    <script>
+        const humberger = document.querySelector("#humberger");
+        const dropDown = document.querySelector("#drop-down");
+        humberger.addEventListener("click", () => {
+            // dropDown.classList.remove("hidden");
+            // dropDown.classList.add("block");
+            dropDown.classList.toggle("hidden");
+        })
+    </script>
+</body>
+</html>
