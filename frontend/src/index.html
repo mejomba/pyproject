@@ -16,7 +16,7 @@
         <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
     </span>
 
-    <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-4 py-2 mx-4 hover:bg-cyan-500 rounded ">
+    <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-4 py-2 hover:bg-cyan-500 rounded ">
         ورود یا ثبت نام 
     </button>
 
@@ -53,10 +53,10 @@
         </li>
 
         <!-- <li class="border-2"> -->
-            <form action="#" id="search-form" class="inline rounded mr-6">
-                <input type="text" class="text-center border-2">
+            <form action="#" id="search-form" class="inline rounded md:mr-4 mr-1">
+                <input type="text" class="text-center border-2 h-10">
             </form>
-            <button type="submit" form="search-form" class="border rounded bg-red-500 px-2">جستجو</button>
+            <button type="submit" form="search-form" class="border rounded bg-red-500 p-2">جستجو</button>
         <!-- </li> -->
 
     </ul>
@@ -71,20 +71,20 @@
     </div>
 </nav>
 
-<div class="h-fit p-2 md:text-xl  bg-red-400 flex justify-center items-center">
+<!-- <div class="h-fit p-2 md:text-2xl text-lg  bg-red-400 flex justify-center items-center">
     <p>عنوان یک خبر یا یک تخفیف مهم</p>
-</div>
+</div> -->
 
 <header class="grid grid-cols-1 items-center h-96 text-center bg-cyan-100 ">
     <h2 class="border md:text-4xl text-2xl">آموزش هایی از تجربه های شخصی من</h2>
     
-    <div class="border h-8 flex m-auto w-1/2">
-        <a href="#" class="rounded-r-full bg-green-300 hover:bg-green-500 transition-all duration-300 pt-1" id="free" style="width: 80%;">
-            <span>80%</span>
+    <div class="h-8 flex m-auto md:w-3/5 w-3/4">
+        <a href="#" class="rounded-r-full shadow bg-green-300 hover:bg-green-500 transition-all duration-300 md:pt-1 pt-2 md:text-base text-xs overflow-hidden" id="free" style="width: 90%;">
+            <span>90%</span>
             <span>رایگان</span>
         </a>
-        <a href="#" class="rounded-l-full bg-yellow-300 hover:bg-yellow-400 transition-all duration-300 pt-1" id="vip" style="width: 20%;">
-            <span>20%</span>
+        <a href="#" class="rounded-l-full shadow bg-yellow-300 hover:bg-yellow-400 transition-all duration-300 md:pt-1 pt-2 md:text-base text-xs overflow-hidden" id="vip" style="width: 10%;">
+            <span>10%</span>
             <span>VIP</span>
         </a>
     </div>
