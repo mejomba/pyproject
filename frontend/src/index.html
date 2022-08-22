@@ -16,7 +16,7 @@
         <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
     </span>
 
-    <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
+    <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-4 py-2 mx-4 hover:bg-cyan-500 rounded ">
         ورود یا ثبت نام 
     </button>
 
@@ -38,22 +38,27 @@
 
     <!-- center section -->
     <ul
-        class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-300" id="drop">
-        <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-300">آیتم اول</a>
+        class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-300 z-10" id="drop">
+        <li class="mx-2 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-300">آموزش ها</a>
         </li>
-        <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-300">آیتم دوم</a>
+        <li class="mx-2 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-300">پروژه ها</a>
         </li>
-        <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-300">آیتم سوم</a>
+        <li class="mx-2 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-300">تماس بامن</a>
         </li>
-        <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-300">آیتم چهارم</a>
+        <li class="mx-2 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-300">درباره من</a>
         </li>
-        <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-300">آیتم پنجم</a>
-        </li>  
+
+        <!-- <li class="border-2"> -->
+            <form action="#" id="search-form" class="inline rounded mr-6">
+                <input type="text" class="text-center border-2">
+            </form>
+            <button type="submit" form="search-form" class="border rounded bg-red-500 px-2">جستجو</button>
+        <!-- </li> -->
+
     </ul>
 
     <!-- left section -->
@@ -66,6 +71,25 @@
     </div>
 </nav>
 
+<div class="h-fit p-2 md:text-xl  bg-red-400 flex justify-center items-center">
+    <p>عنوان یک خبر یا یک تخفیف مهم</p>
+</div>
+
+<header class="grid grid-cols-1 items-center h-96 text-center bg-cyan-100 ">
+    <h2 class="border md:text-4xl text-2xl">آموزش هایی از تجربه های شخصی من</h2>
+    
+    <div class="border h-8 flex m-auto w-1/2">
+        <a href="#" class="rounded-r-full bg-green-300 hover:bg-green-500 transition-all duration-300 pt-1" id="free" style="width: 80%;">
+            <span>80%</span>
+            <span>رایگان</span>
+        </a>
+        <a href="#" class="rounded-l-full bg-yellow-300 hover:bg-yellow-400 transition-all duration-300 pt-1" id="vip" style="width: 20%;">
+            <span>20%</span>
+            <span>VIP</span>
+        </a>
+    </div>
+
+</header>
 
 <script>
     function Menu(e) {
