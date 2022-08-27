@@ -11,13 +11,13 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-<nav class="p-3 bg-white shadow md:flex md:items-center md:justify-between flex justify-between">
+<nav class="p-3 bg-white shadow md:flex md:items-center md:justify-between flex justify-between lg:text-xl text-sm">
     <span class="text-3xl cursor-pointer mx-2 md:hidden flex items-center">
         <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
     </span>
 
-    <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-4 py-2 hover:bg-cyan-500 rounded ">
-        ورود یا ثبت نام 
+    <button class="bg-green-300 font-shabnamTH duration-500 px-4 py-2 hover:bg-green-500 rounded ">
+        ورود / ثبت نام 
     </button>
 
     <!-- <div class="flex ">
@@ -40,24 +40,42 @@
     <ul
         class=" md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-300 z-10" id="drop">
         <li class="font-shabnam lg:mx-4 mx-1 my-6 md:my-0">
-            <a href="#" class="lg:text-xl text-base hover:text-cyan-500 duration-300">آموزش ها</a>
+            <a href="#" classhover:text-cyan-500 duration-300">آموزش ها</a>
         </li>
         <li class="font-shabnam lg:mx-4 mx-1 my-6 md:my-0">
-            <a href="#" class="lg:text-xl text-base hover:text-cyan-500 duration-300">پروژه ها</a>
+            <a href="#" class="hover:text-cyan-500 duration-300">پروژه ها</a>
         </li>
         <li class="font-shabnam lg:mx-4 mx-1 my-6 md:my-0">
-            <a href="#" class="lg:text-xl text-base hover:text-cyan-500 duration-300">تماس بامن</a>
-        </li>
-        <li class="font-shabnam lg:mx-4 mx-1 my-6 md:my-0">
-            <a href="#" class="lg:text-xl text-base hover:text-cyan-500 duration-300">تماس بامن</a>
+            <a href="#" class="hover:text-cyan-500 duration-300">تماس بامن</a>
         </li>
 
         <!-- <li> -->
-            <form action="#" id="search-form" class="inline rounded lg:mr-4 mr-1">
-                <input type="text" class="text-center border-2 h-10">
+            <form action="#" id="search-form" class="relative rounded lg:mr-4 mr-1">
+                <input type="text" placeholder="جستجو کردن" class="text-center border rounded lg:h-10 h-8  bg-gray-100 focus:bg-white focus:outline-none">
+                <button type="submit" form="search-form" class="absolute md:left-0 rounded-l z-10 bg-cyan-300 lg:h-10 h-8">
+                    <ion-icon name="search-outline" class="mx-2 mt-2"></ion-icon>
+                </button>
             </form>
-            <button type="submit" form="search-form" class="border rounded bg-red-500 p-2">جستجو</button>
+            
         <!-- </li> -->
+
+        <!-- <div class="flex items-center justify-center w-screen h-screen bg-gray-800"> -->
+            <!-- <form>
+                <div class="relative text-gray-600 focus-within:text-gray-400">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                        <button type="submit" class="p-1 focus:outline-none focus:shadow-outline">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6">
+                                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </button>
+                    </span>
+                    <input type="search" name="q"
+                        class="py-2 text-sm text-white bg-gray-200 rounded-md pl-10 focus:outline-none focus:bg-gray-100 focus:text-gray-900 text-center"
+                        placeholder="جستجو کردن" autocomplete="on">
+                </div>
+            </form> -->
+        <!-- </div> -->
 
     </ul>
 
@@ -93,6 +111,23 @@
 
 
 <main>
+<!-- ============ TOP 6 TOPIC ============ -->
+    <section class="bg-red-100">
+        <div class="pt-12 pb-16 text-center">
+            <h2 class="text-2xl font-bold border-b-4">موضوعات پر مخاطب</h2>
+        </div>
+        <div class="flex justify-center pb-10">
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 justify-items-center w-1/2">
+                <a href="#" class="border bg-cyan-100 py-4 xl:px-8 px-4 xl:text-xl xl:w-48 w-36 text-center shadow hover:shadow-lg transition duration-300">pyhton</a>
+                <a href="#" class="border bg-cyan-100 py-4 xl:px-8 px-4 xl:text-xl xl:w-48 w-36 text-center shadow hover:shadow-lg transition duration-300">pyhtonpyhton</a>
+                <a href="#" class="border bg-cyan-100 py-4 xl:px-8 px-4 xl:text-xl xl:w-48 w-36 text-center shadow hover:shadow-lg transition duration-300">java</a>
+                <a href="#" class="border bg-cyan-100 py-4 xl:px-8 px-4 xl:text-xl xl:w-48 w-36 text-center shadow hover:shadow-lg transition duration-300">bootstraqp</a>
+                <a href="#" class="border bg-cyan-100 py-4 xl:px-8 px-4 xl:text-xl xl:w-48 w-36 text-center shadow hover:shadow-lg transition duration-300">django</a>
+                <a href="#" class="border bg-cyan-100 py-4 xl:px-8 px-4 xl:text-xl xl:w-48 w-36 text-center shadow hover:shadow-lg transition duration-300">javascript</a>
+            </div>
+        </div>
+        
+    </section>
 <!-- ============ SECTION COURSES ============ -->
     <section class="bg-gray-100">   
         <div class="pt-12 pb-16 text-center">
@@ -453,10 +488,10 @@
             </ul>
             <h4 class="text-right md:text-2xl border-b border-gray-400 w-fit">شبکه های اجتماعی</h4>
             <div class="flex justify-center mt-6">                
-                <a href="#" class="m-3"><img src="../images/instagram.svg" alt="" class="w-8"></a>
-                <a href="#" class="m-3"><img src="../images//telegram.svg" alt="" class="w-8"></a>
-                <a href="#" class="m-3"><img src="../images/aparat.svg" alt="" class="w-8"></a>
-                <a href="#" class="m-3"><img src="../images//youtube.svg" alt="" class="w-8"></a>
+                <a href="#" class="m-3 hover:scale-125 transition duration-300"><img src="../images/instagram.svg" alt="" class="w-8"></a>
+                <a href="#" class="m-3 hover:scale-125 transition duration-300"><img src="../images//telegram.svg" alt="" class="w-8"></a>
+                <a href="#" class="m-3 hover:scale-125 transition duration-300"><img src="../images/aparat.svg" alt="" class="w-8"></a>
+                <a href="#" class="m-3 hover:scale-125 transition duration-300"><img src="../images//youtube.svg" alt="" class="w-8"></a>
             </div>
         </div>
         <div class="p-4">
