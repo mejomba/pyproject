@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <nav class="p-3 bg-white shadow md:flex md:items-center md:justify-between flex justify-between lg:text-xl text-sm">
+        <span class="text-3xl cursor-pointer mx-2 md:hidden flex items-center">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+
+        <button class="bg-green-300 font-shabnamTH duration-500 px-4 py-2 hover:bg-green-500 rounded ">
+            ورود / ثبت نام
+        </button>
+
+        <!-- <div class="flex ">
+        <a href="#" class="flex justify-center items-center relative ml-3 hover:text-cyan-500">
+            <span class="absolute top-0 left-0 bg-red-500  text-gray-100 border rounded-full w-6 text-sm text-center">1</span>
+            <img src="../images/avatar.png" alt="" class="h-10 rounded-full">
+            <span class="mr-2 pl-6">
+                پروفایل
+            </span>
+        </a>
+        
+        <a href="#" class=" relative text-3xl">
+            <ion-icon name="notifications-outline" class="ml-3"></ion-icon>
+            <span
+                class="absolute top-0 left-0 bg-red-500  text-gray-100 border rounded-full text-sm w-6 text-center hover:bg-red-700">1</span>
+        </a>
+    </div> -->
+
+        <!-- center section -->
+        <ul class=" md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-300 z-10"
+            id="drop">
+            <li class="font-shabnam lg:mx-4 mx-1 my-6 md:my-0">
+                <a href="index.html" class="hover:text-cyan-500 duration-300">خانه</a>
+            </li>
+            <li class="font-shabnam lg:mx-4 mx-1 my-6 md:my-0">
+                <a href="blog.html" class="hover:text-cyan-500 duration-300">وبلاگ</a>
+            </li>
+            <li class="font-shabnam lg:mx-4 mx-1 my-6 md:my-0">
+                <a href="#" class="hover:text-cyan-500 duration-300">تماس بامن</a>
+            </li>
+
+            <!-- <li> -->
+            <form action="#" id="search-form" class="relative rounded lg:mr-4 mr-1">
+                <input type="text" placeholder="جستجو کردن"
+                    class="text-center border rounded lg:h-10 h-8  bg-gray-50 focus:bg-white focus:outline-none">
+                <button type="submit" form="search-form"
+                    class="absolute md:left-0 rounded-l z-10 bg-cyan-300 lg:h-10 h-8">
+                    <ion-icon name="search-outline" class="mx-2 mt-2"></ion-icon>
+                </button>
+            </form>
+
+            <!-- </li> -->
+
+            <!-- <div class="flex items-center justify-center w-screen h-screen bg-gray-800"> -->
+            <!-- <form>
+                <div class="relative text-gray-600 focus-within:text-gray-400">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                        <button type="submit" class="p-1 focus:outline-none focus:shadow-outline">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6">
+                                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </button>
+                    </span>
+                    <input type="search" name="q"
+                        class="py-2 text-sm text-white bg-gray-200 rounded-md pl-10 focus:outline-none focus:bg-gray-100 focus:text-gray-900 text-center"
+                        placeholder="جستجو کردن" autocomplete="on">
+                </div>
+            </form> -->
+            <!-- </div> -->
+
+        </ul>
+
+
+
+        <!-- left section -->
+        <!-- pyproject.ir -->
+        <figure class="bg-greed-500 flex justify-between items-center ">
+            <img class="h-8 inline" src="../images/logo.svg">
+        </figure>
+    </nav>
+
+    <!-- <div class="h-fit p-2 md:text-2xl text-lg  bg-red-400 flex justify-center items-center">
+    <p>عنوان یک خبر یا یک تخفیف مهم</p>
+</div> -->
+
+    <main class="grid lg:grid-cols-6 md:grid-cols-8 grid-cols-1">
+        <section class="bg-gray-50 lg:col-span-5 md:col-span-6 col-span-1 lg:px-16 md:px-4 px-2">
+            <article class="bg-re-100 md:m-6">
+                <header class="border-b-4 mb-6 py-3 font-shabnamTH ">
+                    <h2 class="md:text-3xl text-2xl mb-3">این عنوان مقاله است</h2>
+                    <div class="mb-3">
+                        <span>نوشته شده توسط</span>
+                        <span>
+                            <a href="#" class="bg-blue-200 rounded px-1 hover:bg-blue-400 transition duration-300">اسم
+                                نویسنده</a>
+                        </span>
+                        <span>در تاریخ</span>
+                        <span>1400/02/15</spanclass=>
+                            <span>آخرین ویرایش</spanclass=>
+                                <span>1400/03/19</span>
+                    </div>
+                    <div class="mb-3">
+                        <span>به اشتراک گذاری مطلب در</span>
+                        <a href="#"><img src="../images/instagram.svg" alt="" class="w-6 inline mr-1 hover:scale-125 transition duration-300"></a>
+                        <a href="#"><img src="../images/telegram.svg" alt="" class="w-6 inline mr-1 hover:scale-125 transition duration-300"></a>
+                        <a href="#"><img src="../images/aparat.svg" alt="" class="w-6 inline mr-1 hover:scale-125 transition duration-300"></a>
+                        <a href="#"><img src="../images/youtube.svg" alt="" class="w-6 inline mr-1 hover:scale-125 transition duration-300"></a>
+                    </div>
+                </header>
+                
+                <p>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                    روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                    ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا
+                    با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در
+                    این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                    حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن
+                    ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون
+                    و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                    کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت
+                    بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید
+                    داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای
+                    اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی
+                    نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                    است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت
+                    و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان
+                    رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+                    موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+                    پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                    با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                    تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                    آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                    طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                    راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل
+                    دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
+                    از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                    مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
+                    شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
+                    خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و
+                    شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود
+                    طراحی اساسا مورد استفاده قرار گیرد.
+                </p>
+                <div class="border-t-4 border-b-4 my-4 py-4">
+                    <span>این مطلب در دسته بندی:</span>
+                    <span class="font-semibold">
+                        <a href="#" class="rounded py-1 px-2 bg-blue-100 hover:bg-blue-300 transition duragion-300 mx-1">دسته بندی اولی</a>
+                        <a href="#" class="rounded py-1 px-2 bg-blue-100 hover:bg-blue-300 transition duragion-300 mx-1">دومی</a>
+                        <a href="#" class="rounded py-1 px-2 bg-blue-100 hover:bg-blue-300 transition duragion-300 mx-1">این هم سوم</a>
+                        <a href="#" class="rounded py-1 px-2 bg-blue-100 hover:bg-blue-300 transition duragion-300 mx-1">یکی دیگه</a>
+                    </span>
+                    <span>قرار دارد</span>
+                </div>
+                <div class="border-t-4 border-b-4 my-4 py-4">
+                    <span>کلمات کلیدی:</span>
+                    <span class="font-semibold">
+                        <a href="#" class="rounded py-1 px-2 bg-red-100 hover:bg-red-300 transition duragion-300 mx-1">کلمه اول</a>
+                        <a href="#" class="rounded py-1 px-2 bg-red-100 hover:bg-red-300 transition duragion-300 mx-1">دومین</a>
+                        <a href="#" class="rounded py-1 px-2 bg-red-100 hover:bg-red-300 transition duragion-300 mx-1">سومین کلمه</a>
+                        <a href="#" class="rounded py-1 px-2 bg-red-100 hover:bg-red-300 transition duragion-300 mx-1">کلمه کلیدی چهار</a>
+                    </span>
+                </div>
+            </article>
+        </section>
+        <section class="lg:col-span-1 md:col-span-2 col-span-1 font-shabnamMD">
+            <div class="sticky top-0">
+                <h3 class="bg-yellow-100 text-gray-700 py-6 text-center text-2xl">
+                    <span class="border-b-4">مطالب مرتبط</span>
+                </h3>
+                <a href="#" class="flex justify-center items-center text-gray-600 rounded w-full h-24 p-1 overflow-hidden my-1 bg-blue-200 shadow hover:bg-blue-300 hover:shadow-lg transition duration-300">
+                    عنوان یک مطلب مرتبط
+                </a>
+                <a href="#"
+                    class="flex justify-center items-center text-gray-600 rounded w-full h-24 p-1 overflow-hidden my-1 bg-blue-200 shadow hover:bg-blue-300 hover:shadow-lg transition duration-300">
+                    عنوان یک مطلب مرتبط
+                </a>
+                <a href="#"
+                    class="flex justify-center items-center text-gray-600 rounded w-full h-24 p-1 overflow-hidden my-1 bg-blue-200 shadow hover:bg-blue-300 hover:shadow-lg transition duration-300">
+                    عنوان یک مطلب مرتبط
+                </a>
+                <a href="#"
+                    class="flex justify-center items-center text-gray-600 rounded w-full h-24 p-1 overflow-hidden my-1 bg-blue-200 shadow hover:bg-blue-300 hover:shadow-lg transition duration-300">
+                    عنوان یک مطلب مرتبط که اسم آن طولانی است و طولانی تر خیلی پیشتر english و farsi قاطی پاتی است بزار یکم دیگه بنویسم که از
+                    اندازه box بزنه بیرون
+                </a>
+                <a href="#"
+                    class="flex justify-center items-center text-gray-600 rounded w-full h-24 p-1 overflow-hidden my-1 bg-blue-200 shadow hover:bg-blue-300 hover:shadow-lg transition duration-300">
+                    عنوان یک مطلب مرتبط
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- footer -->
+    <footer class="grid grid-cols-1 shadow-lg bg-blue-100">
+        <div class="grid md:grid-cols-3 md:gap-4 grid-cols-1">
+            <div class="p-4">
+                <h4 class="text-right md:text-2xl border-b border-gray-400 w-fit">روش های ارتباط</h4>
+                <ul class="mt-3 mr-6 mb-6 md:text-lg text-sm pt-2 list-square">
+                    <li><a href="#" class="hover:text-red-500 transition duration-300">فرم تماس با من</a></li>
+                </ul>
+                <h4 class="text-right md:text-2xl border-b border-gray-400 w-fit">شبکه های اجتماعی</h4>
+                <div class="flex justify-center mt-6">
+                    <a href="#" class="m-3 hover:scale-125 transition duration-300"><img src="../images/instagram.svg"
+                            alt="" class="w-8"></a>
+                    <a href="#" class="m-3 hover:scale-125 transition duration-300"><img src="../images//telegram.svg"
+                            alt="" class="w-8"></a>
+                    <a href="#" class="m-3 hover:scale-125 transition duration-300"><img src="../images/aparat.svg"
+                            alt="" class="w-8"></a>
+                    <a href="#" class="m-3 hover:scale-125 transition duration-300"><img src="../images//youtube.svg"
+                            alt="" class="w-8"></a>
+                </div>
+            </div>
+            <div class="p-4">
+                <h4 class="md:text-2xl border-b border-gray-400 w-fit">دریافت مطالب هفتگی</h4>
+                <div class="flex justify-center mt-6">
+                    <form action="#">
+                        <input type="email" id="feed" class="h-10 text-center rounded-r">
+                    </form>
+                    <button
+                        class="text-lg border rounded-l px-3 bg-green-300 hover:bg-green-500 transition duration-300"
+                        form="feed">ثبت</button>
+                </div>
+            </div>
+            <div class="p-4">
+                <h4 class="md:text-2xl border-b border-gray-400 w-fit">لینک های مفید</h4>
+                <div class=" grid md:grid-cols-1 grid-cols-2 gap-2">
+                    <ul class="m-3 md:text-lg text-sm">
+                        <li class=" pt-2"><a href="#" class="hover:text-red-500 transition duration-300">لینک یا عنوان
+                                مطلب</a></li>
+                        <li class=" pt-2"><a href="#" class="hover:text-red-500 transition duration-300">لینک یا عنوان
+                                مطلب</a></li>
+                        <li class=" pt-2"><a href="#" class="hover:text-red-500 transition duration-300">لینک یا عنوان
+                                مطلب</a></li>
+                        <li class=" pt-2"><a href="#" class="hover:text-red-500 transition duration-300">لینک یا عنوان
+                                مطلب</a></li>
+                        <li class=" pt-2"><a href="#" class="hover:text-red-500 transition duration-300">لینک یا عنوان
+                                مطلب</a></li>
+                    </ul>
+                    <div class="m-3 md:flex md:justify-evenly">
+                        <a href="#">
+                            <img src="../images/aparat.svg" alt="" class="w-20">
+                        </a>
+                        <a href="#">
+                            <img src="../images/youtube.svg" alt="" class="w-20">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-100 h-10 flex justify-center items-center text-gray-600">قسمت دومی</div>
+    </footer>
+    <script>
+        function Menu(e) {
+            let drop = document.querySelector('#drop');
+            e.name === 'menu' ? (e.name = "close", drop.classList.add('top-16'), drop.classList.add('opacity-100')) : (e.name = "menu", drop.classList.remove('top-16'), drop.classList.remove('opacity-100'))
+        }
+    </script>
+</body>
+
+</html>

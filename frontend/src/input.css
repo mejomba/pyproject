@@ -7,27 +7,27 @@
     src: url("../fonts/Shabnam-Thin.woff");
 }
 @font-face {
-    font-family: "SHABNAM-LIGHT";
-    src: url("../fonts/Shabnam-Light.woff");
-}
-@font-face {
-    font-family: "SHABNAM";
-    src: url("../fonts/Shabnam.woff")
+    font-family: "SAMIM";
+    src: url("../fonts/Samim.woff2");
 }
 @font-face {
     font-family: "SHABNAM-MEDIUM";
-    src: url("../fonts/Shabnam-Medium.woff");
+    src: url("../fonts/Shabnam-Medium.woff")
 }
 
 @layer base {
     h1,h2,h3,h4,h5,h6 {
-        font-family: "shabnam-MEDIUM";
+        font-family: "SHABNAM-MEDIUM";
     }
     body {
-        font-family: "shabnam";
+        font-family: "SAMIM";
     }
     p {
-        font-family: "shabnam-LIGHT";
+        font-family: "SAMIM";
+        font-size: 1.2rem !important;
+        text-align: justify !important;
+        line-height: 2.25rem !important;
+        color: rgb(55,65,81);
     }
     .rtl {
         direction: rtl;
