@@ -35,4 +35,12 @@
     .ltr {
         direction: ltr;
     }
+    .card-text {
+        font-size: 1rem !important;
+    }
+    .badge {
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+    }
 }
