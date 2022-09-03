@@ -61,5 +61,19 @@
         transition: height 0.4s ease-out;
     }
     
+    .hide{
+        display: none;
+    }
+    .side-panel-collaps {
+        max-width: 0px !important;
+    }
+    #side-panel {
+        max-width: 100%;
+        -webkit-transition: max-width 0.5s;
+        -moz-transition: max-width 0.5s;
+        -ms-transition: max-width 0.5s;
+        -o-transition: max-width 0.5s;
+        transition: max-width 0.5s;
+    }
     
 }

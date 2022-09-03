@@ -13,3 +13,20 @@ const btns = document.querySelectorAll('.collapse');
             }
         })
     })
+
+// open close profile side panel
+const sideButton = document.getElementById('side-button');
+const openSide = sideButton.firstElementChild;
+const closeSide = sideButton.lastElementChild;
+const sidePanel = document.getElementById('side-panel');
+const profileMain = document.getElementById('profile-main');
+
+sideButton.addEventListener("click", (e)=>{
+    e.preventDefault();
+    sidePanel.classList.toggle('side-panel-collaps');
+    // profileMain.classList.toggle('w-[80%]');
+    openSide.classList.toggle('hide');
+    closeSide.classList.toggle('hide');
+    
+})
+closeSide.addEventListener("click", ()=>{})
