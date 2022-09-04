@@ -59,21 +59,37 @@
         height: 0;
         overflow: hidden;
         transition: height 0.4s ease-out;
+        ;
     }
     
     .hide{
         display: none;
     }
     .side-panel-collaps {
-        max-width: 0px !important;
+        max-width: 0% !important;
+    }
+    .panel-width{
+        width: 20%;
+        max-width: 300px;
+        -webkit-transition: max-width 0.5s ease-out;
+        -moz-transition: max-width 0.5s ease-out;
+        -ms-transition: max-width 0.5s ease-out;
+        -o-transition: max-width 0.5s ease-out;
+        transition: max-width 0.5s ease-out;
+    }
+    .inner-panel-width {
+        width: inherit;
+        max-width: inherit;
+        -webkit-transition: max-width 0.5s ease-out;
+        -moz-transition: max-width 0.5s ease-out;
+        -ms-transition: max-width 0.5s ease-out;
+        -o-transition: max-width 0.5s ease-out;
+        transition: max-width 0.5s ease-out;
     }
     #side-panel {
-        max-width: 100%;
-        -webkit-transition: max-width 0.5s;
-        -moz-transition: max-width 0.5s;
-        -ms-transition: max-width 0.5s;
-        -o-transition: max-width 0.5s;
-        transition: max-width 0.5s;
+        width: 100%;
     }
-    
+    .side-panel-button {
+        left: 0 !important;
+    }
 }

@@ -19,14 +19,14 @@ const sideButton = document.getElementById('side-button');
 const openSide = sideButton.firstElementChild;
 const closeSide = sideButton.lastElementChild;
 const sidePanel = document.getElementById('side-panel');
-const profileMain = document.getElementById('profile-main');
-
+const innerPanel = sidePanel.firstElementChild;
+const sidePanelButton = document.getElementById('side-panel-button');
 sideButton.addEventListener("click", (e)=>{
     e.preventDefault();
     sidePanel.classList.toggle('side-panel-collaps');
-    // profileMain.classList.toggle('w-[80%]');
+    innerPanel.classList.toggle('side-panel-collaps');
+    sidePanelButton.classList.toggle('side-panel-button');
     openSide.classList.toggle('hide');
     closeSide.classList.toggle('hide');
     
 })
-closeSide.addEventListener("click", ()=>{})

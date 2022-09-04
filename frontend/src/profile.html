@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="p-3 bg-white shadow md:flex md:items-center md:justify-between flex justify-between lg:text-xl text-sm">
+    <nav class="p-3 bg-white shadow md:flex md:items-center md:justify-between flex justify-between lg:text-xl text-sm sticky top-0 z-10">
         <span class="text-3xl cursor-pointer mx-2 md:hidden flex items-center">
             <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
         </span>
@@ -84,13 +84,28 @@
 
     <main>
         
-        <section class="flex w-full">
-            <div class="bg-green-200 w-[20%] relative h-screen" id="side-panel">
-                <div class="absolute left-[-2.5rem] top-[40%]">
-                    <a href="#" id="side-button">
-                        <ion-icon name="chevron-forward-outline" class="text-lg bg-red-400 p-3 hide"></ion-icon>
-                        <ion-icon name="chevron-back-outline" class="text-lg bg-red-400 p-3"></ion-icon>
-                    </a>
+        <section class="flex">
+            <div class="bg-green-200 panel-width" id="side-panel">
+                <div class="bg-red-200 fixed top-16 bottom-10 inner-panel-width">
+                    <div class="absolute left-[-2.1rem] side-panel-button top-[40%]" id="side-panel-button">
+                        <a href="#" id="side-button">
+                            <ion-icon name="chevron-forward-outline"
+                                class="text-lg bg-red-200 p-2 rounded hover:bg-red-300 transition duration-300 hide"></ion-icon>
+                            <ion-icon name="chevron-back-outline"
+                                class="text-lg bg-red-200 p-2 rounded hover:bg-red-300 transition duration-300"></ion-icon>
+                        </a>
+                    </div>
+                    <ul class="overflow-hidden">
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                    </ul>
                 </div>
             </div>
 
@@ -116,10 +131,26 @@
                         <div class="grid grid-cols-2">
                             <div class="justify-self-start px-2">
                                 <h4 class="text-right text-2xl pr-2 py-3">۳</h4>
-                                <h5 class="text-right pr-2 pb-4">سابقه پرداخت های من</h5>
+                                <h5 class="text-right pr-2 pb-4">سابقه پرداخت</h5>
                             </div>
                             <div class="justify-self-end text-gray-600">
                                 <ion-icon name="card-outline" class="w-12 h-12 m-2"></ion-icon>
+                            </div>
+                        </div>
+                        <a href="#"
+                            class="py-1 rounded text-center flex justify-center w-full bg-green-100 hover:bg-green-200 transition duration-300">
+                            اطلاعت بیشتر
+                            <ion-icon name="arrow-redo-outline" class="self-center mx-2"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-1 bg-red-100 rounded">
+                        <div class="grid grid-cols-2">
+                            <div class="justify-self-start px-2">
+                                <h4 class="text-right text-2xl pr-2 py-3">۵</h4>
+                                <h5 class="text-right pr-2 pb-4">مورد علاقه من</h5>
+                            </div>
+                            <div class="justify-self-end text-gray-600">
+                                <ion-icon name="heart-outline" class="w-12 h-12 m-2"></ion-icon>
                             </div>
                         </div>
                         <a href="#"
@@ -149,7 +180,129 @@
                 <div class="bg-blue-100">
                     
                 </div>
-                <div class="bg-blue-200">item</div>
+                <!-- ============ SECTION COURSES ============ -->
+                <section class="">
+                    <div class="pt-12 pb-6 text-center mx-4">
+                        <h2 class="text-2xl font-bold border-b-4 pb-2">آموزش های شما</h2>
+                    </div>
+                    <div class="grid gap-2 justify-items-center lg:grid-cols-4 md:grid-cols-2 pb-6 px-6">
+                
+                        <div class="max-w-sm rounded overflow-hidden shadow-lg w-full mb-3 bg-white">
+                            <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                <p class="text-gray-700 card-text">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها
+                                    و متون
+                                    بلکه روزنامه
+                                    و مجله در ستون و سطرآنچنان که لازم است
+                                </p>
+                            </div>
+                            <div class="m-6">
+                                <a href="#" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده آموزش</a>
+                            </div>
+                            <div class="px-6 pt-4 pb-2 ltr">
+                                <a href="#"
+                                    class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                    <span>#</span>
+                                    <span>python</span>
+                                </a>
+                                <a href="#"
+                                    class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                    <span>#</span>
+                                    <span>python</span>
+                                </a>
+                            </div>
+                        </div>
+                
+                        <div class="max-w-sm rounded overflow-hidden shadow-lg mb-3 bg-white">
+                            <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                <p class="text-gray-700 card-text">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها
+                                    و متون
+                                    بلکه روزنامه
+                                    و مجله در ستون و سطرآنچنان که لازم است
+                                </p>
+                            </div>
+                            <div class="m-6">
+                                <a href="#" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده آموزش</a>
+                            </div>
+                            <div class="px-6 pt-4 pb-2 ltr">
+                                <a href="#"
+                                    class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                    <span>#</span>
+                                    <span>python</span>
+                                </a>
+                                <a href="#"
+                                    class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                    <span>#</span>
+                                    <span>python</span>
+                                </a>
+                            </div>
+                        </div>
+                
+                        <div class="max-w-sm rounded overflow-hidden shadow-lg mb-3 bg-white">
+                            <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                <p class="text-gray-700 card-text">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها
+                                    و متون
+                                    بلکه روزنامه
+                                    و مجله در ستون و سطرآنچنان که لازم است
+                                </p>
+                            </div>
+                            <div class="m-6">
+                                <a href="#" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده آموزش</a>
+                            </div>
+                            <div class="px-6 pt-4 pb-2 ltr">
+                                <a href="#"
+                                    class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                    <span>#</span>
+                                    <span>python</span>
+                                </a>
+                                <a href="#"
+                                    class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                    <span>#</span>
+                                    <span>python</span>
+                                </a>
+                            </div>
+                        </div>
+                
+                        <div class="max-w-sm rounded overflow-hidden shadow-lg mb-3 bg-white">
+                            <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                <p class="text-gray-700 card-text">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها
+                                    و متون
+                                    بلکه روزنامه
+                                    و مجله در ستون و سطرآنچنان که لازم است
+                                </p>
+                            </div>
+                            <div class="m-6">
+                                <a href="#" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده آموزش</a>
+                            </div>
+                            <div class="px-6 pt-4 pb-2 ltr">
+                                <a href="#"
+                                    class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                    <span>#</span>
+                                    <span>python</span>
+                                </a>
+                                <a href="#"
+                                    class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                    <span>#</span>
+                                    <span>python</span>
+                                </a>
+                            </div>
+                        </div>                
+                    </div>
+                </section>
+                <div class="flex justify-center mb-3">
+                    <a href="#" class="text-center rounded p-3 bg-blue-300 hover:bg-blue-400 transition duration-300">مشاهده بیشتر</a>
+                </div>
                 <div class="bg-blue-300">item</div>
                 <div class="bg-blue-400">item</div>
                 <div class="bg-blue-500">item</div>
