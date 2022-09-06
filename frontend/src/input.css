@@ -63,28 +63,28 @@
     }
     
     .hide{
-        display: none;
+        display: none !important;
     }
     .side-panel-collaps {
-        max-width: 0% !important;
+        max-width: 260px !important;
     }
     .panel-width{
-        width: 20%;
-        max-width: 300px;
-        -webkit-transition: max-width 0.5s ease-out;
-        -moz-transition: max-width 0.5s ease-out;
-        -ms-transition: max-width 0.5s ease-out;
-        -o-transition: max-width 0.5s ease-out;
-        transition: max-width 0.5s ease-out;
+        width: 0%;
+        max-width: 0px;
+        -webkit-transition: max-width 0.3s ease-out;
+        -moz-transition: max-width 0.3s ease-out;
+        -ms-transition: max-width 0.3s ease-out;
+        -o-transition: max-width 0.3s ease-out;
+        transition: max-width 0.3s ease-out;
     }
     .inner-panel-width {
         width: inherit;
         max-width: inherit;
-        -webkit-transition: max-width 0.5s ease-out;
-        -moz-transition: max-width 0.5s ease-out;
-        -ms-transition: max-width 0.5s ease-out;
-        -o-transition: max-width 0.5s ease-out;
-        transition: max-width 0.5s ease-out;
+        -webkit-transition: max-width 0.3s ease-out;
+        -moz-transition: max-width 0.3s ease-out;
+        -ms-transition: max-width 0.3s ease-out;
+        -o-transition: max-width 0.3s ease-out;
+        transition: max-width 0.3s ease-out;
     }
     #side-panel {
         width: 100%;

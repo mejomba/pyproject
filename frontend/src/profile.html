@@ -18,25 +18,27 @@
             <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
         </span>
 
-        <button class="bg-green-300 font-shabnamTH duration-500 px-4 py-2 hover:bg-green-500 rounded ">
+        <!-- <button class="bg-green-300 font-shabnamTH duration-500 px-4 py-2 hover:bg-green-500 rounded ">
             ورود / ثبت نام
-        </button>
+        </button> -->
 
         <div class="flex ">
             <a href="profile.html" class="flex justify-center items-center relative ml-3 hover:text-cyan-500">
                 <span
-                    class="absolute top-0 left-0 bg-red-500  text-gray-100 border rounded-full w-6 text-sm text-center">1</span>
+                    class="absolute top-0 left-0 bg-red-500  text-gray-100 border rounded-full w-6 text-sm text-center">1
+                </span>
                 <img src="../images/avatar.png" alt="" class="h-10 rounded-full">
                 <span class="mr-2 pl-6">
                     پروفایل
                 </span>
             </a>
 
-            <a href="#" class=" relative text-3xl">
+            <!-- <a href="#" class=" relative text-3xl">
                 <ion-icon name="notifications-outline" class="ml-3"></ion-icon>
                 <span
-                    class="absolute top-0 left-0 bg-red-500  text-gray-100 border rounded-full text-sm w-6 text-center hover:bg-red-700">1</span>
-            </a>
+                    class="absolute top-0 left-0 bg-red-500  text-gray-100 border rounded-full text-sm w-6 text-center hover:bg-red-700">1
+                </span>
+            </a> -->
         </div>
 
         <!-- center section -->
@@ -85,26 +87,69 @@
     <main>
         
         <section class="flex">
-            <div class="bg-green-200 panel-width" id="side-panel">
-                <div class="bg-red-200 fixed top-16 bottom-10 inner-panel-width">
+            <div class="panel-width" id="side-panel">
+                <div class="bg-slate-800 fixed top-16 bottom-0 inner-panel-width z-10">
                     <div class="absolute left-[-2.1rem] side-panel-button top-[40%]" id="side-panel-button">
                         <a href="#" id="side-button">
-                            <ion-icon name="chevron-forward-outline"
-                                class="text-lg bg-red-200 p-2 rounded hover:bg-red-300 transition duration-300 hide"></ion-icon>
-                            <ion-icon name="chevron-back-outline"
-                                class="text-lg bg-red-200 p-2 rounded hover:bg-red-300 transition duration-300"></ion-icon>
+                            <span>
+                                <ion-icon name="chevron-forward-outline"class="text-lg bg-zinc-400 p-2 rounded-l hover:bg-zinc-300 transition duration-300"></ion-icon>
+                                <span class="absolute rounded-full left-[-0.75rem] top-[-1.2rem] px-3 py-2 bg-red-500 text-xs font-semibold text-gray-100">1</span><!--left-->
+                            </span>
+                            <span class="hide">
+                                <ion-icon name="chevron-back-outline" class="text-lg bg-zinc-400 p-2 rounded-r hover:bg-zinc-300 transition duration-300">
+                                </ion-icon>
+                            </span>
+                            <!--right-->
                         </a>
                     </div>
-                    <ul class="overflow-hidden">
-                        <li>item</li>
-                        <li>item</li>
-                        <li>item</li>
-                        <li>item</li>
-                        <li>item</li>
-                        <li>item</li>
-                        <li>item</li>
-                        <li>item</li>
-                        <li>item</li>
+                    <ul class="overflow-hidden bg-slate-800 text-gray-100">
+                        <li class="pr-2 pt-2 flex justify-between bg-slate-900 border-b-4 border-b-slate-600">
+                            <!-- <ion-icon name="battery-half-outline" class="self-center ml-2"></ion-icon> -->
+                            <img src="../images/avatar.png" alt="" class="w-12 h-12 border-2 p-0.5 border-orange-500 rounded-full self-center ">
+                            <a href="#" class="w-full pr-2 py-4">مجتبی امین زاده سرایدشتی</a>
+                        </li>
+                        <li class="pr-2 flex justify-between hover:bg-slate-700">
+                            <ion-icon name="battery-half-outline" class="self-center ml-2"></ion-icon>
+                            <a href="#" class="w-full pr-2 py-4 hover:bg-slate-700"> آیتم شماره دوم</a>
+                        </li>
+                        <li class="pr-2 flex justify-between hover:bg-slate-700 bg-slate-600">
+                            <ion-icon name="battery-half-outline" class="self-center ml-2"></ion-icon>
+                            <a href="#" class="w-full pr-2 py-4 hover:bg-slate-700"> آیتمی که فعال است</a>
+                        </li>
+                        <li class="pr-2 flex justify-between hover:bg-slate-700">
+                            <ion-icon name="battery-half-outline" class="self-center ml-2"></ion-icon>
+                            <a href="#" class="w-full pr-2 py-4 hover:bg-slate-700"> گذینه تازه
+                                <span class="badge bg-red-500 float-left">جدید</span>
+                            </a>
+                        </li>
+                        <li class="pr-2 flex justify-between hover:bg-slate-700">
+                            <ion-icon name="battery-half-outline" class="self-center ml-2"></ion-icon>
+                            <a href="#" class="w-full pr-2 py-4 hover:bg-slate-700"> چند آیتم دیگه</a>
+                        </li>
+                        <li class="pr-2 flex justify-between hover:bg-slate-700">
+                            <ion-icon name="battery-half-outline" class="self-center ml-2"></ion-icon>
+                            <a href="#" class="w-full pr-2 py-4 hover:bg-slate-700"> چند آیتم دیگه</a>
+                        </li>
+                        <li class="pr-2 flex justify-between hover:bg-slate-700">
+                            <ion-icon name="battery-half-outline" class="self-center ml-2"></ion-icon>
+                            <a href="#" class="w-full pr-2 py-4 hover:bg-slate-700"> چند آیتم دیگه</a>
+                        </li>
+                        <li class="pr-2 flex justify-between hover:bg-slate-700">
+                            <ion-icon name="battery-half-outline" class="self-center ml-2"></ion-icon>
+                            <a href="#" class="w-full pr-2 py-4 hover:bg-slate-700"> چند آیتم دیگه</a>
+                        </li>
+                        <li class="pr-2 flex justify-between hover:bg-slate-700">
+                            <ion-icon name="battery-half-outline" class="self-center ml-2"></ion-icon>
+                            <a href="#" class="w-full pr-2 py-4 hover:bg-slate-700"> چند آیتم دیگه
+                                <span class="badge bg-red-500 float-left">1</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="absolute bottom-0 w-full text-gray-100">
+                        <li class="pr-2 flex justify-between hover:bg-slate-700 border-t-4 border-t-slate-600">
+                            <ion-icon name="power-outline" class="self-center ml-2"></ion-icon>
+                            <a href="#" class="w-full py-4"> آیتم پایین</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -177,172 +222,548 @@
                     </div>
                 </div>
 
-                <div class="bg-blue-100">
-                    
-                </div>
                 <!-- ============ SECTION COURSES ============ -->
-                <section class="">
-                    <div class="pt-12 pb-6 text-center mx-4">
-                        <h2 class="text-2xl font-bold border-b-4 pb-2">آموزش های شما</h2>
+                <div class="mb-10">
+                    <section>
+                        <div class="pt-12 pb-6 text-center">
+                            <h2 class="text-2xl font-bold border-b-4 border-b-slate-300 p-2 bg-slate-200">آموزش های شما</h2>
+                        </div>
+                        <div class="grid gap-2 justify-items-center lg:grid-cols-4 md:grid-cols-2 pb-6 px-6">
+                    
+                            <div class="relative max-w-sm rounded overflow-hidden shadow-lg w-full mb-3 bg-white">
+                                <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                                <span class="absolute left-1 top-1 badge bg-yellow-200 hover:bg-yellow-400 transition duration-300">VIP</span>
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                    <p class="text-gray-700 card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                        چاپگرها و متون
+                                        بلکه روزنامه
+                                        و مجله در ستون و سطرآنچنان که لازم است
+                                    </p>
+                                </div>
+                                <div class="m-6">
+                                    <a href="course_info.html" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده
+                                        آموزش</a>
+                                </div>
+                                <div class="px-6 pt-4 pb-2 ltr">
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                </div>
+                            </div>
+                    
+                            <div class="relative max-w-sm rounded overflow-hidden shadow-lg w-full mb-3 bg-white">
+                                <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                                <span class="absolute left-1 top-1 badge bg-green-200 hover:bg-green-400 transition duration-300">رایگان</span>
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                    <p class="text-gray-700 card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                        چاپگرها و متون
+                                        بلکه روزنامه
+                                        و مجله در ستون و سطرآنچنان که لازم است
+                                    </p>
+                                </div>
+                                <div class="m-6">
+                                    <a href="course_info.html" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده
+                                        آموزش</a>
+                                </div>
+                                <div class="px-6 pt-4 pb-2 ltr">
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                </div>
+                            </div>
+                    
+                            <div class="relative max-w-sm rounded overflow-hidden shadow-lg w-full mb-3 bg-white">
+                                <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                                <span class="absolute left-1 top-1 badge bg-green-200 hover:bg-green-400 transition duration-300">رایگان</span>
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                    <p class="text-gray-700 card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                        چاپگرها و متون
+                                        بلکه روزنامه
+                                        و مجله در ستون و سطرآنچنان که لازم است
+                                    </p>
+                                </div>
+                                <div class="m-6">
+                                    <a href="course_info.html" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده
+                                        آموزش</a>
+                                </div>
+                                <div class="px-6 pt-4 pb-2 ltr">
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                </div>
+                            </div>
+                    
+                            <div class="relative max-w-sm rounded overflow-hidden shadow-lg w-full mb-3 bg-white">
+                                <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                                <span class="absolute left-1 top-1 badge bg-green-200 hover:bg-green-400 transition duration-300">رایگان</span>
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                    <p class="text-gray-700 card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                        چاپگرها و متون
+                                        بلکه روزنامه
+                                        و مجله در ستون و سطرآنچنان که لازم است
+                                    </p>
+                                </div>
+                                <div class="m-6">
+                                    <a href="course_info.html" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده
+                                        آموزش</a>
+                                </div>
+                                <div class="px-6 pt-4 pb-2 ltr">
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="flex justify-center mb-3">
+                        <a href="#" class="text-center rounded p-3 bg-blue-300 hover:bg-blue-400 transition duration-300">مشاهده بیشتر</a>
                     </div>
-                    <div class="grid gap-2 justify-items-center lg:grid-cols-4 md:grid-cols-2 pb-6 px-6">
-                
-                        <div class="max-w-sm rounded overflow-hidden shadow-lg w-full mb-3 bg-white">
-                            <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
-                                <p class="text-gray-700 card-text">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها
-                                    و متون
-                                    بلکه روزنامه
-                                    و مجله در ستون و سطرآنچنان که لازم است
-                                </p>
-                            </div>
-                            <div class="m-6">
-                                <a href="#" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده آموزش</a>
-                            </div>
-                            <div class="px-6 pt-4 pb-2 ltr">
-                                <a href="#"
-                                    class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
-                                    <span>#</span>
-                                    <span>python</span>
-                                </a>
-                                <a href="#"
-                                    class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
-                                    <span>#</span>
-                                    <span>python</span>
-                                </a>
-                            </div>
-                        </div>
-                
-                        <div class="max-w-sm rounded overflow-hidden shadow-lg mb-3 bg-white">
-                            <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
-                                <p class="text-gray-700 card-text">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها
-                                    و متون
-                                    بلکه روزنامه
-                                    و مجله در ستون و سطرآنچنان که لازم است
-                                </p>
-                            </div>
-                            <div class="m-6">
-                                <a href="#" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده آموزش</a>
-                            </div>
-                            <div class="px-6 pt-4 pb-2 ltr">
-                                <a href="#"
-                                    class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
-                                    <span>#</span>
-                                    <span>python</span>
-                                </a>
-                                <a href="#"
-                                    class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
-                                    <span>#</span>
-                                    <span>python</span>
-                                </a>
-                            </div>
-                        </div>
-                
-                        <div class="max-w-sm rounded overflow-hidden shadow-lg mb-3 bg-white">
-                            <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
-                                <p class="text-gray-700 card-text">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها
-                                    و متون
-                                    بلکه روزنامه
-                                    و مجله در ستون و سطرآنچنان که لازم است
-                                </p>
-                            </div>
-                            <div class="m-6">
-                                <a href="#" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده آموزش</a>
-                            </div>
-                            <div class="px-6 pt-4 pb-2 ltr">
-                                <a href="#"
-                                    class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
-                                    <span>#</span>
-                                    <span>python</span>
-                                </a>
-                                <a href="#"
-                                    class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
-                                    <span>#</span>
-                                    <span>python</span>
-                                </a>
-                            </div>
-                        </div>
-                
-                        <div class="max-w-sm rounded overflow-hidden shadow-lg mb-3 bg-white">
-                            <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
-                                <p class="text-gray-700 card-text">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها
-                                    و متون
-                                    بلکه روزنامه
-                                    و مجله در ستون و سطرآنچنان که لازم است
-                                </p>
-                            </div>
-                            <div class="m-6">
-                                <a href="#" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده آموزش</a>
-                            </div>
-                            <div class="px-6 pt-4 pb-2 ltr">
-                                <a href="#"
-                                    class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
-                                    <span>#</span>
-                                    <span>python</span>
-                                </a>
-                                <a href="#"
-                                    class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
-                                    <span>#</span>
-                                    <span>python</span>
-                                </a>
-                            </div>
-                        </div>                
-                    </div>
-                </section>
-                <div class="flex justify-center mb-3">
-                    <a href="#" class="text-center rounded p-3 bg-blue-300 hover:bg-blue-400 transition duration-300">مشاهده بیشتر</a>
                 </div>
-                <div class="bg-blue-300">item</div>
-                <div class="bg-blue-400">item</div>
-                <div class="bg-blue-500">item</div>
+                
+                <!-- ============ SECTION MOST VISITED ============ -->
+                <div class="mb-10">
+                    <section>
+                        <div class="pt-12 pb-6 text-center">
+                            <h2 class="text-2xl font-bold border-b-4 border-b-slate-300 p-2 bg-slate-200">پر بازدید ها</h2>
+                        </div>
+                        <div class="grid gap-2 justify-items-center lg:grid-cols-4 md:grid-cols-2 pb-6 px-6">
+                    
+                            <div class="relative max-w-sm rounded overflow-hidden shadow-lg w-full mb-3 bg-white">
+                                <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                                <span class="absolute left-1 top-1 badge bg-green-200 hover:bg-green-400 transition duration-300">رایگان</span>
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                    <p class="text-gray-700 card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                        چاپگرها و متون
+                                        بلکه روزنامه
+                                        و مجله در ستون و سطرآنچنان که لازم است
+                                    </p>
+                                </div>
+                                <div class="m-6">
+                                    <a href="course_info.html" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده
+                                        آموزش</a>
+                                </div>
+                                <div class="px-6 pt-4 pb-2 ltr">
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                </div>
+                            </div>
+                    
+                            <div class="relative max-w-sm rounded overflow-hidden shadow-lg w-full mb-3 bg-white">
+                                <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                                <span class="absolute left-1 top-1 badge bg-green-200 hover:bg-green-400 transition duration-300">رایگان</span>
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                    <p class="text-gray-700 card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                        چاپگرها و متون
+                                        بلکه روزنامه
+                                        و مجله در ستون و سطرآنچنان که لازم است
+                                    </p>
+                                </div>
+                                <div class="m-6">
+                                    <a href="course_info.html" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده
+                                        آموزش</a>
+                                </div>
+                                <div class="px-6 pt-4 pb-2 ltr">
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                </div>
+                            </div>
+                    
+                            <div class="relative max-w-sm rounded overflow-hidden shadow-lg w-full mb-3 bg-white">
+                                <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                                <span class="absolute left-1 top-1 badge bg-green-200 hover:bg-green-400 transition duration-300">رایگان</span>
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                    <p class="text-gray-700 card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                        چاپگرها و متون
+                                        بلکه روزنامه
+                                        و مجله در ستون و سطرآنچنان که لازم است
+                                    </p>
+                                </div>
+                                <div class="m-6">
+                                    <a href="course_info.html" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده
+                                        آموزش</a>
+                                </div>
+                                <div class="px-6 pt-4 pb-2 ltr">
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                </div>
+                            </div>
+                    
+                            <div class="relative max-w-sm rounded overflow-hidden shadow-lg w-full mb-3 bg-white">
+                                <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                                <span class="absolute left-1 top-1 badge bg-green-200 hover:bg-green-400 transition duration-300">رایگان</span>
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                    <p class="text-gray-700 card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                        چاپگرها و متون
+                                        بلکه روزنامه
+                                        و مجله در ستون و سطرآنچنان که لازم است
+                                    </p>
+                                </div>
+                                <div class="m-6">
+                                    <a href="course_info.html" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده
+                                        آموزش</a>
+                                </div>
+                                <div class="px-6 pt-4 pb-2 ltr">
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="flex justify-center mb-3">
+                        <a href="#" class="text-center rounded p-3 bg-blue-300 hover:bg-blue-400 transition duration-300">مشاهده بیشتر</a>
+                    </div>
+                </div>
+
+                <!-- ============ SECTION NEW COURSES free ============ -->
+                <div class="mb-10">
+                    <section class="">
+                        <div class="pt-12 pb-6 text-center">
+                            <h2 class="text-2xl font-bold border-b-4 border-b-slate-300 p-2 bg-slate-200">جدید ها
+                                <span class="badge bg-green-200 hover:bg-green-400 transition duration-300">رایگان</span>
+                            </h2>
+                        </div>
+                        <div class="grid gap-2 justify-items-center lg:grid-cols-4 md:grid-cols-2 pb-6 px-6">
+                    
+                            <div class="relative max-w-sm rounded overflow-hidden shadow-lg w-full mb-3 bg-white">
+                                <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                                <span class="absolute left-1 top-1 badge bg-green-200 hover:bg-green-400 transition duration-300">رایگان</span>
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                    <p class="text-gray-700 card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                        چاپگرها و متون
+                                        بلکه روزنامه
+                                        و مجله در ستون و سطرآنچنان که لازم است
+                                    </p>
+                                </div>
+                                <div class="m-6">
+                                    <a href="course_info.html" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده
+                                        آموزش</a>
+                                </div>
+                                <div class="px-6 pt-4 pb-2 ltr">
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                </div>
+                            </div>
+                    
+                            <div class="relative max-w-sm rounded overflow-hidden shadow-lg w-full mb-3 bg-white">
+                                <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                                <span class="absolute left-1 top-1 badge bg-green-200 hover:bg-green-400 transition duration-300">رایگان</span>
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                    <p class="text-gray-700 card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                        چاپگرها و متون
+                                        بلکه روزنامه
+                                        و مجله در ستون و سطرآنچنان که لازم است
+                                    </p>
+                                </div>
+                                <div class="m-6">
+                                    <a href="course_info.html" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده
+                                        آموزش</a>
+                                </div>
+                                <div class="px-6 pt-4 pb-2 ltr">
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                </div>
+                            </div>
+                    
+                            <div class="relative max-w-sm rounded overflow-hidden shadow-lg w-full mb-3 bg-white">
+                                <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                                <span class="absolute left-1 top-1 badge bg-green-200 hover:bg-green-400 transition duration-300">رایگان</span>
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                    <p class="text-gray-700 card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                        چاپگرها و متون
+                                        بلکه روزنامه
+                                        و مجله در ستون و سطرآنچنان که لازم است
+                                    </p>
+                                </div>
+                                <div class="m-6">
+                                    <a href="course_info.html" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده
+                                        آموزش</a>
+                                </div>
+                                <div class="px-6 pt-4 pb-2 ltr">
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                </div>
+                            </div>
+                    
+                            <div class="relative max-w-sm rounded overflow-hidden shadow-lg w-full mb-3 bg-white">
+                                <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                                <span class="absolute left-1 top-1 badge bg-green-200 hover:bg-green-400 transition duration-300">رایگان</span>
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                    <p class="text-gray-700 card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                        چاپگرها و متون
+                                        بلکه روزنامه
+                                        و مجله در ستون و سطرآنچنان که لازم است
+                                    </p>
+                                </div>
+                                <div class="m-6">
+                                    <a href="course_info.html" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده
+                                        آموزش</a>
+                                </div>
+                                <div class="px-6 pt-4 pb-2 ltr">
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="flex justify-center mb-3">
+                        <a href="#" class="text-center rounded p-3 bg-blue-300 hover:bg-blue-400 transition duration-300">مشاهده بیشتر</a>
+                    </div>
+                </div>
+                <!-- ============ SECTION NEW COURSES vip ============ -->
+                <div class="mb-10">
+                    <section class="">
+                        <div class="pt-12 pb-6 text-center">
+                            <h2 class="text-2xl font-bold border-b-4 border-b-slate-300 p-2 bg-slate-200">جدید ها
+                                <span class="badge bg-yellow-200 hover:bg-yellow-400 transition duration-300">VIP</span>
+                            </h2>
+                        </div>
+                        <div class="grid gap-2 justify-items-center lg:grid-cols-4 md:grid-cols-2 pb-6 px-6">
+                    
+                            <div class="relative max-w-sm rounded overflow-hidden shadow-lg w-full mb-3 bg-white">
+                                <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                                <span class="absolute left-1 top-1 badge bg-yellow-200 hover:bg-yellow-400 transition duration-300">VIP</span>
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                    <p class="text-gray-700 card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                        چاپگرها و متون
+                                        بلکه روزنامه
+                                        و مجله در ستون و سطرآنچنان که لازم است
+                                    </p>
+                                </div>
+                                <div class="m-6">
+                                    <a href="course_info.html" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده
+                                        آموزش</a>
+                                </div>
+                                <div class="px-6 pt-4 pb-2 ltr">
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                </div>
+                            </div>
+                    
+                            <div class="relative max-w-sm rounded overflow-hidden shadow-lg w-full mb-3 bg-white">
+                                <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                                <span class="absolute left-1 top-1 badge bg-yellow-200 hover:bg-yellow-400 transition duration-300">VIP</span>
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                    <p class="text-gray-700 card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                        چاپگرها و متون
+                                        بلکه روزنامه
+                                        و مجله در ستون و سطرآنچنان که لازم است
+                                    </p>
+                                </div>
+                                <div class="m-6">
+                                    <a href="course_info.html" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده
+                                        آموزش</a>
+                                </div>
+                                <div class="px-6 pt-4 pb-2 ltr">
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                </div>
+                            </div>
+                    
+                            <div class="relative max-w-sm rounded overflow-hidden shadow-lg w-full mb-3 bg-white">
+                                <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                                <span class="absolute left-1 top-1 badge bg-yellow-200 hover:bg-yellow-400 transition duration-300">VIP</span>
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                    <p class="text-gray-700 card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                        چاپگرها و متون
+                                        بلکه روزنامه
+                                        و مجله در ستون و سطرآنچنان که لازم است
+                                    </p>
+                                </div>
+                                <div class="m-6">
+                                    <a href="course_info.html" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده
+                                        آموزش</a>
+                                </div>
+                                <div class="px-6 pt-4 pb-2 ltr">
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                </div>
+                            </div>
+                    
+                            <div class="relative max-w-sm rounded overflow-hidden shadow-lg w-full mb-3 bg-white">
+                                <img class="w-full" src="../images/card-image.png" alt="Sunset in the mountains">
+                                <span class="absolute left-1 top-1 badge bg-yellow-200 hover:bg-yellow-400 transition duration-300">VIP</span>
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">عنوان یک آموزش</div>
+                                    <p class="text-gray-700 card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                        چاپگرها و متون
+                                        بلکه روزنامه
+                                        و مجله در ستون و سطرآنچنان که لازم است
+                                    </p>
+                                </div>
+                                <div class="m-6">
+                                    <a href="course_info.html" class="rounded p-2 bg-green-200 hover:bg-green-400 transition duration-300">مشاهده
+                                        آموزش</a>
+                                </div>
+                                <div class="px-6 pt-4 pb-2 ltr">
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                    <a href="#"
+                                        class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-200 transition duration-300">
+                                        <span>#</span>
+                                        <span>python</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="flex justify-center mb-3">
+                        <a href="#" class="text-center rounded p-3 bg-blue-300 hover:bg-blue-400 transition duration-300">مشاهده بیشتر</a>
+                    </div>
+                </div>
                 <div class="bg-blue-600">item</div>
             </div>
         </section>    
         
-            
-            
-        
-            <!-- <section class="grid xl:grid-cols-8 md:grid-cols-10 w-full" id="profile-wraper">
-                <div class="xl:col-span-1 md:col-span-2 bg-cyan-100 relative h-screen" id="side-panel">
-                    <div class="absolute left-[-2.5rem] top-[40%]">
-                        <a href="#" id="side-button">
-                            <ion-icon name="chevron-forward-outline" class="text-lg bg-red-400 p-3 hide"></ion-icon>
-                            <ion-icon name="chevron-back-outline" class="text-lg bg-red-400 p-3"></ion-icon>
-                        </a>
-                    </div>
-                </div>
-                <div class="xl:col-span-7 md:col-span-8" id="profile-main">
-                    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 items-center text-center">
-                        <div class="grid grid-cols-1 bg-red-100 rounded">
-                            <div class="grid grid-cols-2">
-                                <div class="justify-self-start px-2">
-                                    <p>متن اول</p>
-                                    <p>متن دوم</p>
-                                </div>
-                                <div class="justify-self-end">
-                                    <img src="../images/avatar.png" alt="" class="w-16">
-                                </div>
-                            </div>
-                            <a href="#"
-                                class="rounded text-center flex justify-center w-full bg-green-100 hover:bg-green-200 transition duration-300">
-                                مشاهده جزیات
-                                <ion-icon name="arrow-redo-outline" class="self-center mx-2"></ion-icon>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
     </main>
 
 
