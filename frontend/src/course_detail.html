@@ -274,11 +274,119 @@
                                 <!-- end of single item -->
                                 <!-- single item -->
                                 <div class="content" id="goals">
-                                    <h4>goals</h4>
-                                    <p>
-                                        Chambray authentic truffaut, kickstarter brunch taxidermy vape
-                               
-                                    </p>
+                                    <h4>گفتگوی جدید ایجاد کنید یا از میان گفتگوهای قبلی پاسخ خود را پیدا کنید</h4>
+                                    <!-- conversation -->
+                                    <div class="border rounded lg:col-span-5 md:col-span-6">
+                                        <!-- create conversation -->
+                                        <form class="w-full md:p-6 p-3 md:text-base text-xs">
+                                            <div class="my-4 grid grid-cols-7">
+                                                <label for="useremail" class="lg:col-span-1 col-span-2">عنوان گفتگو</label>
+                                                <input type="text"
+                                                    class="lg:col-span-4 col-span-5 border rounded bg-slate-50 focus:bg-white focus:outline-none p-2 mr-3 text-gray-600"
+                                                    required name="useremail" placeholder="یک عنوان بنویسید">
+                                            </div>
+                                            <div class="my-4 grid grid-cols-7">
+                                                <label for="username" class="lg:col-span-1 col-span-2">هشتگ (حداکثر ۳ مورد)</label>
+                                                <div class="relative lg:col-span-4 col-span-5 mr-3 text-gray-600 md:text-base text-xs">
+                                                    <input type="text"
+                                                        class="w-full border rounded bg-slate-50 focus:bg-white focus:outline-none p-2 "
+                                                        id="input-hashtag" required name="username" placeholder="بنویسید و ثبت کنید">
+                                                    <a href="#" class="submit-btn bg-blue-200 absolute left-0 text-center p-2 rounded-l border">ثبت</a>
+                                                </div>
+                                            </div>
+                                            <div class="flex md:justify-center justify-end" id="conversation-hashtag">
+                                                <!-- <label for="" class="lg:col-span-1 col-span-1"></label> -->
+                                                <!-- fill from js -->
+                                                <section class="section-center">
+                                                    <!-- form -->
+                                                    <!-- <div class="grocery-form">
+                                                       
+                                                    </div> -->
+                                                    <!-- list -->
+                                                    <div class="flex">
+                                                        <div class="grocery-list flex"></div>
+                                                    </div>
+                                                    <div class="mt-4">
+                                                        <a href="#" class="clear-btn bg-red-400 text-white rounded p-1 text-sm hidden hover:bg-red-500 transition duration-300">پاک کردن همه</a>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                            <div class="alert text-center my-2 transition duration-300"></div>
+                                            <div class="my-4 grid grid-cols-7">
+                                                <label for="username" class="lg:col-span-1 col-span-2">سوال شما:</label>
+                                                <textarea name="comment" id="comment" rows="6"
+                                                    class="lg:col-span-4 col-span-5 border rounded bg-slate-50 focus:bg-white focus:outline-none p-2 mr-3 text-gray-600"
+                                                    placeholder="متن سوال خود را اینجا بنویسید...."></textarea>
+                                            </div>
+                                            <div class="my-4 grid grid-cols-7">
+                                                <label for="username" class="lg:col-span-1 col-span-2">فایل پیوست:</label>
+                                                <input type="file">
+                                            </div>
+                                        </form>
+                                        <h3 class="py-6 text-center bg-gray-200">
+                                            <span class="md:text-2xl sm:text-base">گفتگوهای پیشین</span>
+                                            <span>(</span>
+                                            <span>۲۴ گفتگو</span>
+                                            <span>245</span>
+                                            <span>پاسخ</span>
+                                            <span>)</span>
+                                        </h3>
+                                        <!-- active conversation -->
+                                        <div class="relative m-4">
+                                            <div class="absolute top-[-2.2rem] right-0">
+                                                <div class="flex">
+                                                    <img src="../images/avatar.png" alt="" class="w-16 border rounded-full p-1 border-2 border-orange-500">
+                                                    <div>
+                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
+                                                        <div class="self-end mr-2">
+                                                            <span class="font-semibold ml-2">مجتبی امین زاده</span>
+                                                            <span class="italic">۱۴۰۱/۰۳/۱۷</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="border rounded my-12">
+                                                <p class="p-6 mt-4">
+                                                    ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعتیپسوم متن ساختگی با تولید سادگی نامفهوم از صنعتیپسوم
+                                                    متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                                    چاپگرها و متون
+                                                    بلکه روزنامه
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="relative m-4">
+                                            <div class="absolute top-[-2.2rem] right-0">
+                                                <div class="flex">
+                                                    <img src="../images/avatar.png" alt="" class="w-16 border rounded-full p-1 border-2 border-orange-500">
+                                                    <div>
+                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
+                                                        <div class="self-end mr-2">
+                                                            <span class="font-semibold ml-2">مجتبی امین زاده</span>
+                                                            <span class="italic">۱۴۰۱/۰۳/۱۷</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="border rounded my-12">
+                                                <p class="p-6 mt-4">
+                                                    ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعتیپسوم متن ساختگی با تولید سادگی نامفهوم از صنعتیپسوم
+                                                    متن
+                                                    ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                                    چاپگرها و متون
+                                                    بلکه روزنامه
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of conversation -->
                                 </div>
                                 <!-- end of single item -->
                             </div>
