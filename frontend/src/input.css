@@ -179,7 +179,7 @@
     .about-content {
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
-        padding: 2rem 1.5rem;
+        padding: 2rem 0.5rem;
     }
 
     /* hide content */

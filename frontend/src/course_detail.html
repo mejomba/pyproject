@@ -239,7 +239,6 @@
                 </div>
                 <!-- ============ SECTION EXTRA ITEM ============ -->
                 <section class="grid justify-items-center">               
-                    <!-- <div class="about-center"> -->
                         <article class="md:w-4/5 w-full about border">
                             <!-- btn container -->
                             <div class="btn-container">
@@ -274,9 +273,10 @@
                                 <!-- end of single item -->
                                 <!-- single item -->
                                 <div class="content" id="goals">
-                                    <h4>گفتگوی جدید ایجاد کنید یا از میان گفتگوهای قبلی پاسخ خود را پیدا کنید</h4>
+                                    
                                     <!-- conversation -->
                                     <div class="border rounded lg:col-span-5 md:col-span-6">
+                                        <h4 class="md:text-lg text-sm mt-3 mr-6">گفتگوی جدید ایجاد کنید یا از میان گفتگوهای قبلی پاسخ خود را پیدا کنید</h4>
                                         <!-- create conversation -->
                                         <form class="w-full md:p-6 p-3 md:text-base text-xs">
                                             <div class="my-4 grid grid-cols-7">
@@ -322,6 +322,7 @@
                                                 <label for="username" class="lg:col-span-1 col-span-2">فایل پیوست:</label>
                                                 <input type="file">
                                             </div>
+                                            <button type="submit" class="p-2 rounded bg-green-200 hover:bg-green-400 transition duration-300">ثبت گفتگوی جدید</button>
                                         </form>
                                         <h3 class="py-6 text-center bg-gray-200">
                                             <span class="md:text-2xl sm:text-base">گفتگوهای پیشین</span>
@@ -332,57 +333,196 @@
                                             <span>)</span>
                                         </h3>
                                         <!-- active conversation -->
-                                        <div class="relative m-4">
-                                            <div class="absolute top-[-2.2rem] right-0">
-                                                <div class="flex">
-                                                    <img src="../images/avatar.png" alt="" class="w-16 border rounded-full p-1 border-2 border-orange-500">
-                                                    <div>
-                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
-                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
-                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
-                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
-                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
-                                                        <div class="self-end mr-2">
-                                                            <span class="font-semibold ml-2">مجتبی امین زاده</span>
-                                                            <span class="italic">۱۴۰۱/۰۳/۱۷</span>
-                                                        </div>
+                                        <div class="flex mt-2 mb-6 justify-center">
+                                            <!-- search for conversation -->
+                                            <form action="#" class="w-3/4">
+                                                <div class="relative">
+                                                    <input type="text" placeholder="جستجو در موضوعات گذشته" name="prev-search" class="h-10 focus:outline-none border w-full p-2 rounded">
+                                                    <button type="submit" class="absolute left-0 rounded-l bg-blue-200 h-10 px-2 hover:bg-blue-400 transition duration-300">جستجو</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!-- prev conversation -->
+                                        <div class="border-t">
+                                            <div class="flex mr-1 my-4">
+                                                <img src="../images/avatar.png" alt="" class="rounded-full border-2 border-orange-500 p-2 w-16 h-16">
+                                                <div class="mr-3">
+                                                    <a href="#">
+                                                        <h2 class="md:text-xl text-base text-gray-700 pl-1">این عنوان گفتگویی است که قبلا توسط شخص دیگری ایجاد شده</h2>
+                                                    </a>
+                                                    <div class="mt-2 md:text-sm text-xs text-gray-700">
+                                                        <span>توسط:</span>
+                                                        <span class="mr-0.5">مجتبی امین زاده سرایدشتی</span>
+                                                        <span class="md:mr-6 mr-3">در:</span>
+                                                        <span class="mr-0.5">۱۴۰۱/۰۳/۱۴ ۱۵:۲۶</span>
+                                                        <span class="md:mr-6 mr-3">کلمات کلیدی:</span>
+                                                        <span class="md:mr-1.5 mr-1">
+                                                            <a href="#" class="hover:text-blue-500 transition duration-300">python</a>
+                                                        </span>
+                                                        <span class="md:mr-1.5 mr-1">
+                                                            <a href="#" class="hover:text-blue-500 transition duration-300">django</a>
+                                                        </span>
+                                                        <span class="md:mr-1.5 mr-1">
+                                                            <a href="#" class="hover:text-blue-500 transition duration-300">پایتون</a>
+                                                        </span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="border rounded my-12">
-                                                <p class="p-6 mt-4">
-                                                    ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعتیپسوم متن ساختگی با تولید سادگی نامفهوم از صنعتیپسوم
-                                                    متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-                                                    چاپگرها و متون
-                                                    بلکه روزنامه
+                                            <!-- conversation short discription -->
+                                            <div class="mr-1 md:pl-6 pl-2">
+                                                <p>
+                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                                    روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                                                    ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا
+                                                    با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در
+                                                    این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                                                    حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
                                                 </p>
+                                            </div>
+                                            <!-- conversation more action -->
+                                            <div class="flex mr-1 mt-4 mb-10 md:text-base text-xs">
+                                                <div class="self-center">
+                                                    <a href="#" class="hover:bg-green-200 transition duration-300 bg-green-100 p-2 rounded">
+                                                        <ion-icon name="chatbubbles-outline" class="md:w-6 md:h-6 w-4 h-4"></ion-icon>
+                                                        <span>۱۴</span>
+                                                        <span>پاسخ</span>
+                                                    </a>
+                                                </div>
+                                                <div class="md:mr-6 mr-1 self-center">
+                                                    <span class="mr-0.5">آخرین پاسخ:</span>
+                                                    <span>۱۴۰۱/۰۵.۲۵ ۱۲:۰۲</span>
+                                                </div>
+                                                <div class="md:mr-6 mr-1 self-center">
+                                                    <span>وضعیت:</span>
+                                                    <!-- <span class="bg-green-300 badge">حل شده</span> -->
+                                                    <span class="bg-yellow-300 badge">گفتگو</span>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="relative m-4">
-                                            <div class="absolute top-[-2.2rem] right-0">
-                                                <div class="flex">
-                                                    <img src="../images/avatar.png" alt="" class="w-16 border rounded-full p-1 border-2 border-orange-500">
-                                                    <div>
-                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
-                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
-                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
-                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
-                                                        <ion-icon name="star" class="text-yellow-500 mr-1 self-center"></ion-icon>
-                                                        <div class="self-end mr-2">
-                                                            <span class="font-semibold ml-2">مجتبی امین زاده</span>
-                                                            <span class="italic">۱۴۰۱/۰۳/۱۷</span>
-                                                        </div>
+                                        <!-- prev conversation 2-->
+                                        <div class="border-t">
+                                            <div class="flex mr-1 my-4">
+                                                <img src="../images/avatar.png" alt="" class="rounded-full border-2 border-orange-500 p-2 w-16 h-16">
+                                                <div class="mr-3">
+                                                    <a href="#">
+                                                        <h2 class="md:text-xl text-base text-gray-700 pl-1">این عنوان گفتگویی است که قبلا توسط شخص دیگری ایجاد
+                                                            شده</h2>
+                                                    </a>
+                                                    <div class="mt-2 md:text-sm text-xs text-gray-700">
+                                                        <span>توسط:</span>
+                                                        <span class="mr-0.5">مجتبی امین زاده سرایدشتی</span>
+                                                        <span class="md:mr-6 mr-3">در:</span>
+                                                        <span class="mr-0.5">۱۴۰۱/۰۳/۱۴ ۱۵:۲۶</span>
+                                                        <span class="md:mr-6 mr-3">کلمات کلیدی:</span>
+                                                        <span class="md:mr-1.5 mr-1">
+                                                            <a href="#" class="hover:text-blue-500 transition duration-300">python</a>
+                                                        </span>
+                                                        <span class="md:mr-1.5 mr-1">
+                                                            <a href="#" class="hover:text-blue-500 transition duration-300">django</a>
+                                                        </span>
+                                                        <span class="md:mr-1.5 mr-1">
+                                                            <a href="#" class="hover:text-blue-500 transition duration-300">پایتون</a>
+                                                        </span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="border rounded my-12">
-                                                <p class="p-6 mt-4">
-                                                    ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعتیپسوم متن ساختگی با تولید سادگی نامفهوم از صنعتیپسوم
-                                                    متن
-                                                    ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-                                                    چاپگرها و متون
-                                                    بلکه روزنامه
+                                            <!-- conversation short discription -->
+                                            <div class="mr-1 md:pl-6 pl-2">
+                                                <p>
+                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                                    بلکه
+                                                    روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با
+                                                    هدف بهبود
+                                                    ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را
+                                                    می طلبد، تا
+                                                    با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی
+                                                    ایجاد کرد، در
+                                                    این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان
+                                                    مورد نیاز شامل
+                                                    حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
                                                 </p>
+                                            </div>
+                                            <!-- conversation more action -->
+                                            <div class="flex mr-1 mt-4 mb-10 md:text-base text-xs">
+                                                <div class="self-center">
+                                                    <a href="#" class="hover:bg-green-200 transition duration-300 bg-green-100 p-2 rounded">
+                                                        <ion-icon name="chatbubbles-outline" class="md:w-6 md:h-6 w-4 h-4"></ion-icon>
+                                                        <span>۱۴</span>
+                                                        <span>پاسخ</span>
+                                                    </a>
+                                                </div>
+                                                <div class="md:mr-6 mr-1 self-center">
+                                                    <span class="mr-0.5">آخرین پاسخ:</span>
+                                                    <span>۱۴۰۱/۰۵.۲۵ ۱۲:۰۲</span>
+                                                </div>
+                                                <div class="md:mr-6 mr-1 self-center">
+                                                    <span>وضعیت:</span>
+                                                    <!-- <span class="bg-green-300 badge">حل شده</span> -->
+                                                    <span class="bg-yellow-300 badge">گفتگو</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- prev conversation 3-->
+                                        <div class="border-t">
+                                            <div class="flex mr-1 my-4">
+                                                <img src="../images/avatar.png" alt="" class="rounded-full border-2 border-orange-500 p-2 w-16 h-16">
+                                                <div class="mr-3">
+                                                    <a href="#">
+                                                        <h2 class="md:text-xl text-base text-gray-700 pl-1">این عنوان گفتگویی است که قبلا توسط شخص دیگری ایجاد
+                                                            شده</h2>
+                                                    </a>
+                                                    <div class="mt-2 md:text-sm text-xs text-gray-700">
+                                                        <span>توسط:</span>
+                                                        <span class="mr-0.5">مجتبی امین زاده سرایدشتی</span>
+                                                        <span class="md:mr-6 mr-3">در:</span>
+                                                        <span class="mr-0.5">۱۴۰۱/۰۳/۱۴ ۱۵:۲۶</span>
+                                                        <span class="md:mr-6 mr-3">کلمات کلیدی:</span>
+                                                        <span class="md:mr-1.5 mr-1">
+                                                            <a href="#" class="hover:text-blue-500 transition duration-300">python</a>
+                                                        </span>
+                                                        <span class="md:mr-1.5 mr-1">
+                                                            <a href="#" class="hover:text-blue-500 transition duration-300">django</a>
+                                                        </span>
+                                                        <span class="md:mr-1.5 mr-1">
+                                                            <a href="#" class="hover:text-blue-500 transition duration-300">پایتون</a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- conversation short discription -->
+                                            <div class="mr-1 md:pl-6 pl-2">
+                                                <p>
+                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                                    بلکه
+                                                    روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با
+                                                    هدف بهبود
+                                                    ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را
+                                                    می طلبد، تا
+                                                    با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی
+                                                    ایجاد کرد، در
+                                                    این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان
+                                                    مورد نیاز شامل
+                                                    حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                                </p>
+                                            </div>
+                                            <!-- conversation more action -->
+                                            <div class="flex mr-1 mt-4 mb-10 md:text-base text-xs">
+                                                <div class="self-center">
+                                                    <a href="#" class="hover:bg-green-200 transition duration-300 bg-green-100 p-2 rounded">
+                                                        <ion-icon name="chatbubbles-outline" class="md:w-6 md:h-6 w-4 h-4"></ion-icon>
+                                                        <span>۱۴</span>
+                                                        <span>پاسخ</span>
+                                                    </a>
+                                                </div>
+                                                <div class="md:mr-6 mr-1 self-center">
+                                                    <span class="mr-0.5">آخرین پاسخ:</span>
+                                                    <span>۱۴۰۱/۰۵.۲۵ ۱۲:۰۲</span>
+                                                </div>
+                                                <div class="md:mr-6 mr-1 self-center">
+                                                    <span>وضعیت:</span>
+                                                    <!-- <span class="bg-green-300 badge">حل شده</span> -->
+                                                    <span class="bg-yellow-300 badge">گفتگو</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -391,7 +531,6 @@
                                 <!-- end of single item -->
                             </div>
                         </article>
-                    <!-- </div> -->
                 </section>
             </div>
         </section>
