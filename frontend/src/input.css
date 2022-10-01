@@ -102,6 +102,15 @@
         -ms-transform: rotate(180deg);
         -webkit-transform: rotate(180deg);
     }
+    .popup-login {
+        position: fixed;
+        right: 25%;
+        top: 25%;
+        width: 50%;
+        height: 50%;
+        background-color: white;
+        z-index: 10;
+    }
         /*
     =============== 
     tab
