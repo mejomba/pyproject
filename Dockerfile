@@ -15,7 +15,7 @@ RUN python -m venv /venv && \
         build-base postgresql-dev musl-dev linux-headers && \
     /venv/bin/pip install -r /requirements.txt && \
     apk del .tmp-deps && \
-    adduser --disabled-password -no-create-home app && \
+    adduser --disabled-password --no-create-home app && \
     chown -R app:app /venv && \
     mkdir -p /vol/web/static && \
     mkdir -p /vol/web/media && \
