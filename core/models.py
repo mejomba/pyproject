@@ -10,6 +10,9 @@ class BaseModel(models.Model):
     is_active = models.BooleanField(default=True)
     is_spacial = models.BooleanField(default=False)
 
+    class Meta:
+        abstract = True
+
 
 class Image(BaseModel):
     path = models.ImageField(upload_to='media', null=True, blank=True)
