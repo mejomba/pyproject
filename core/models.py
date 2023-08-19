@@ -2,9 +2,18 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser, User
 
 
-class Image(models.Model):
-    path = models.ImageField(upload_to='media')
+class BaseModel(models.Model):
+    create_at = models.DateTimeField(auto_now=True)
+    last_update = models.DateTimeField(auto_now_add=True)
+    delete_date = models.DateTimeField(null=True, blank=True)
+    is_deleted = models.BooleanField(default=False)
+    is_active = models.BooleanField(default=True)
+    is_spacial = models.BooleanField(default=False)
 
 
-class UserProfile(models.Model):
+class Image(BaseModel):
+    path = models.ImageField(upload_to='media', null=True, blank=True)
+
+
+class UserProfile(BaseModel):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
