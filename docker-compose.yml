@@ -19,7 +19,7 @@ services:
       - DB_NAME=devdb
       - DB_USER=devuser
       - DB_PASSWORD=changeme
-      - ALLOWED_HOSTS=87.107.164.24
+      - ALLOWED_HOSTS=87.107.164.24,0.0.0.0
     depends_on:
       - db
   db:
