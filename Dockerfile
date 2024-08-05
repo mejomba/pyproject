@@ -11,7 +11,7 @@ EXPOSE 8000
 RUN apk add dpkg
 RUN apk add --no-cache wget
 RUN wget https://github.com/Aleksi44/django-selenium-docker/blob/master/bin/google-chrome.deb
-RUN dpkg -i /app/google-chrome.deb
+RUN dpkg -i ./bin/google-chrome.deb
 RUN python -m venv /venv && \
     /venv/bin/pip install --upgrade pip && \
 #    apk add --update --no-cache postgresql-client && \
