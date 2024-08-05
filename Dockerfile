@@ -1,20 +1,14 @@
 FROM python:3.9.2-slim-buster
-LABEL maintainer="mojtaba aminzadeh"
 
-ENV PYTHONUNBUFFERED=1
-COPY requirements.txt /requirements.txt
-COPY . /app
-WORKDIR /app
+RUN useradd app
 
 EXPOSE 8000
 
-RUN python -m venv /venv && \
-    /venv/bin/pip install --upgrade pip && \
-#    apk add --update --no-cache postgresql-client && \
-    apt-get install --yes --quiet postgresql-client && \
-#    apk add --update --no-cache --virtual .tmp-deps \
-    apt-get install --yes --quiet \
-        build-base postgresql-dev musl-dev linux-headers
+ENV PYTHONUNBUFFERED=1 \
+    PORT=8000
+
+WORKDIR /app
+COPY --chown=app:app . .
 
 RUN apt-get update --yes --quiet
 
@@ -54,18 +48,3 @@ RUN apt-get install --yes --quiet --no-install-recommends \
 
 # Install Chrome
 RUN dpkg -i ./bin/google-chrome.deb
-
-RUN /venv/bin/pip install -r /requirements.txt && \
-#     apk del .tmp-deps && \
-    /venv/bin/python manage.py collectstatic --noinput && \
-    adduser --disabled-password --no-create-home app && \
-    chown -R app:app /venv && \
-    mkdir -p /vol/web/static && \
-    mkdir -p /vol/web/media && \
-    chown -R app:app /vol && \
-    mkdir /home/app && \
-    chown -R app:app /home/app && \
-    chmod -R 755 /vol && \
-
-ENV PATH="/venv/bin:$PATH"
-USER root
