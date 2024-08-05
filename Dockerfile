@@ -29,4 +29,4 @@ RUN /venv/bin/pip install -r /requirements.txt && \
     chmod -R 755 /vol
 
 ENV PATH="/venv/bin:$PATH"
-USER app
+USER root
