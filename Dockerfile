@@ -24,6 +24,7 @@ RUN /venv/bin/pip install -r /requirements.txt && \
     mkdir -p /vol/web/static && \
     mkdir -p /vol/web/media && \
     chown -R app:app /vol && \
+    mkdir /home/app && \
     chown -R app:app /home/app && \
     chmod -R 755 /vol
 
