@@ -24,7 +24,7 @@ RUN /venv/bin/pip install -r /requirements.txt && \
     mkdir -p /vol/web/static && \
     mkdir -p /vol/web/media && \
     chown -R app:app /vol && \
-    chmod -R 755 /vol
+    chmod -R 777 /vol
 
 ENV PATH="/venv/bin:$PATH"
 USER app
