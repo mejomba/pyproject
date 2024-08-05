@@ -16,7 +16,7 @@ RUN python -m venv /venv && \
     apk add --update --virtual .tmp-deps \
         build-base postgresql-dev musl-dev linux-headers
 
-RUN apt-get install --yes --quiet --no-install-recommends \
+RUN apk add --update \
     gettext \
     fonts-liberation \
     libasound2 \
