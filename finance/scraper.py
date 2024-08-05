@@ -42,7 +42,7 @@ class Browser(webdriver.Chrome):
         # Allows you to change the size of the window
         chrome_options.add_argument(f"window-size={WINDOW_SIZE}")
 
-        super().__init__(chrome_options=chrome_options)
+        super().__init__()
 
 driver = Browser()
 
