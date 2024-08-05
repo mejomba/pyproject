@@ -1,4 +1,4 @@
-FROM python:3.10-alpine3.18
+FROM python:3.9.2-slim-buster
 LABEL maintainer="mojtaba aminzadeh"
 
 ENV PYTHONUNBUFFERED=1
@@ -11,12 +11,15 @@ EXPOSE 8000
 RUN python -m venv /venv && \
     /venv/bin/pip install --upgrade pip && \
 #    apk add --update --no-cache postgresql-client && \
-    apk add --update postgresql-client && \
+    apt-get install --yes --quiet postgresql-client && \
 #    apk add --update --no-cache --virtual .tmp-deps \
-    apk add --update --virtual .tmp-deps \
+    apt-get install --yes --quiet \
         build-base postgresql-dev musl-dev linux-headers
 
-RUN apk add --update \
+RUN apt-get update --yes --quiet
+
+# Installs the dependencies used by Chrome and Selenium
+RUN apt-get install --yes --quiet --no-install-recommends \
     gettext \
     fonts-liberation \
     libasound2 \
@@ -53,7 +56,7 @@ RUN apk add --update \
 RUN dpkg -i ./bin/google-chrome.deb
 
 RUN /venv/bin/pip install -r /requirements.txt && \
-    apk del .tmp-deps && \
+#     apk del .tmp-deps && \
     /venv/bin/python manage.py collectstatic --noinput && \
     adduser --disabled-password --no-create-home app && \
     chown -R app:app /venv && \
@@ -63,7 +66,6 @@ RUN /venv/bin/pip install -r /requirements.txt && \
     mkdir /home/app && \
     chown -R app:app /home/app && \
     chmod -R 755 /vol && \
-    pip list
 
 ENV PATH="/venv/bin:$PATH"
 USER root
