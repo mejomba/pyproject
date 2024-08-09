@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     # my app
     'core',
     'blog',
+    'file',
 
     # third party app
     'ckeditor',
