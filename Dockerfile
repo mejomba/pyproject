@@ -8,7 +8,6 @@ WORKDIR /app
 
 EXPOSE 8000
 
-RUN apk add chromium
 RUN python -m venv /venv && \
     /venv/bin/pip install --upgrade pip && \
 #    apk add --update --no-cache postgresql-client && \
