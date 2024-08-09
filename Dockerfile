@@ -19,12 +19,12 @@ RUN python -m venv /venv && \
 RUN /venv/bin/pip install -r /requirements.txt && \
     apk del .tmp-deps && \
     /venv/bin/python manage.py collectstatic --noinput && \
-    adduser --disabled-password --no-create-home app && \
-    chown -R app:app /venv && \
-    mkdir -p /vol/web/static && \
-    mkdir -p /vol/web/media && \
-    chown -R app:app /vol/* && \
-    chmod -R 777 /vol
+#    adduser --disabled-password --no-create-home app && \
+#    chown -R app:app /venv && \
+#    mkdir -p /vol/web/static && \
+#    mkdir -p /vol/web/media && \
+#    chown -R app:app /vol/* && \
+#    chmod -R 755 /vol
 
 ENV PATH="/venv/bin:$PATH"
-USER app
+#USER app
