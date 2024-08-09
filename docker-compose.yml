@@ -6,9 +6,7 @@ services:
     command: >
       sh -c "python manage.py wait_for_db &&
              python manage.py migrate &&
-             export DJANGO_SUPERUSER_EMAIL=test@test.com
-             export DJANGO_SUPERUSER_PASSWORD=testpass1234
-             python manage.py createsuperuser --no-input
+             python manage.py createsuperuser_if_not_exist &&
              python manage.py runserver 0.0.0.0:8000"
     ports:
       - "8000:8000"
