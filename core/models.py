@@ -9,6 +9,8 @@ class BaseModel(models.Model):
     is_deleted = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
     is_spacial = models.BooleanField(default=False)
+    # images = GenericRelation('files.Image', related_query_name="parent_object_no")
+    # files = GenericRelation('files.File', related_query_name="parent_object_no")
 
     class Meta:
         abstract = True
