@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 from core.models import User
-from utils import bcolors
+from _tools.utils import bcolors
 
 
 class Command(BaseCommand):
